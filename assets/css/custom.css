@@ -1,0 +1,171 @@
+/* @font-face {
+  font-family: Spectral;
+  src: url(fonts/Spectral-SemiBold.tff);
+  font-weight: semi-bold;
+} */
+
+.site-title {
+  font-size: 1.5em;
+}
+
+body {
+  background: unset;
+}
+
+a {
+  color: rgb(45, 40, 50);
+}
+
+a:hover {
+  color: black;
+}
+
+form {
+  position: relative;
+  bottom: 4em;
+}
+
+form > label {
+  margin: 0.5em auto;
+  text-transform: uppercase;
+}
+
+form > button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:  rgb(45, 40, 50);
+}
+
+.sam {
+  font-size: 0.75em;
+  font-weight: 500;
+}
+
+.header-inner .toggle-wrapper::before {
+  background: #dedfdf;
+  /* content: ""; */
+  display: block;
+  height: 2.7rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+}
+
+.home-works {
+  display: flex;
+  flex-direction: row;
+}
+
+.home-works-image-container {
+  max-width: 80vh;
+  margin: 0 auto;
+  position: relative;
+}
+
+.home-works-image-container > span {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+  padding-top: calc(50% - 1em);
+  opacity: 0;
+  /* background-color: rgba(0,0,0,0); */
+  transition: all 300ms ease;
+}
+
+.home-works-image-container > span:hover,
+.home-works-image-container > span:active {
+  opacity: 1;
+  background-color: rgba(33, 30, 33, 0.333);
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .home-works {
+    flex-direction: column;
+  }
+
+  .home-works-image-container {
+    max-width: calc(100% - 2em);
+    margin: 2em auto;
+  }
+}
+
+/* blockquote {
+    border-color: #cd2653;
+}
+*/
+
+button,
+.button,
+.faux-button,
+.wp-block-button__link,
+.wp-block-file .wp-block-file__button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	background: rgb(45, 40, 50);
+}
+
+/*
+.color-accent,
+.color-accent-hover:focus,
+.color-accent-hover:hover {
+	color: #cd2653;
+}
+
+.bg-accent,
+.bg-accent-hover:focus,
+.bg-accent-hover:hover {
+	background-color: #cd2653;
+}
+
+.border-color-accent,
+.border-color-accent-hover:focus,
+.border-color-accent-hover:hover {
+	border-color: #cd2653;
+}
+
+.fill-children-accent,
+.fill-children-accent * {
+	fill: #cd2653;
+}
+
+.social-icons a {
+	background: #cd2653;
+}
+
+:root .has-accent-color {
+	color: #cd2653;
+}
+
+:root .has-accent-background-color {
+	background-color: #cd2653;
+}
+
+.has-drop-cap:not(:focus)::first-letter {
+	color: #cd2653;
+}
+
+.wp-block-button.is-style-outline {
+	color: #cd2653;
+}
+
+.wp-block-pullquote::before {
+	color: #cd2653;
+}
+
+.comment-reply-link {
+	background-color: #cd2653;
+}
+
+.footer-social a {
+	background-color: #cd2653;
+} */

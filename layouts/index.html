@@ -1,0 +1,18 @@
+{{ define "main" }}
+
+<article class="post-20 page type-page status-publish has-post-thumbnail hentry" id="post-20">
+      {{ if .Site.Params.gallery.enable }}
+      {{ with .Site.Params.gallery }}
+      <div class="home-works">
+          {{ range .gallery_item }}
+          <div class="home-works-image-container">
+            <img src="{{ .image | absURL }}" alt="" /></figure>
+            <span>{{ .title }}</span>
+          </div>
+          {{ end }}
+      </div>
+      {{ end }}
+      {{ end }}
+</article>
+
+{{ end }}
