@@ -1,7 +1,7 @@
 ######################## default configuration ####################
 baseURL = "https://examplesite.com"
 title = "Tassie Russell"
-theme = "twentytwenty"
+theme = "twenty-twenty-hugo"
 languageName = "En"
 languageCode = "en-gb"
 # post pagination
